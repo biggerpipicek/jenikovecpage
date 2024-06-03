@@ -78,3 +78,7 @@ footer a::after {
     background: black;
     transition: 300ms;
 }
+
+footer a:hover {
+    width: 100%;
+}
