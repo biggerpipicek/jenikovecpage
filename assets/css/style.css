@@ -38,7 +38,7 @@ section .box {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
+    gap: 350px;
 }
 
 section .box a > button {
