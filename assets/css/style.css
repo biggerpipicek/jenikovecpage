@@ -1,5 +1,6 @@
 body {
     scroll-behavior: smooth;
+    background-color: #F1E5D1;
 }
 
 .hero {
@@ -23,4 +24,10 @@ body {
     margin-top: 25px;
     transform: scale(3);
     color: white;
+}
+
+section {
+    position: relative;
+    top: 25vh;
+
 }
