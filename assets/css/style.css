@@ -13,3 +13,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.hero img {
+    transform: scale(5);
+}
