@@ -43,47 +43,53 @@ section .box {
 }
 
 section .box a > button {
-    position: relative; /* Add relative positioning */
     transform: scale(3);
     border: 2px solid transparent;
     padding: 10px 30px;
     transition: all 0.3s ease-in-out;
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-    overflow: hidden; /* Hide overflow to contain pseudo-elements */
 }
 
-section .box a > button::before,
-section .box a > button::after {
-    content: "";
+section .box a > button:before, section .box a > button:after {
+    display: block;
+    content: ' ';
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
     position: absolute;
-    background: white;
-    transition: transform 0.3s ease-in-out;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
-section .box a > button::before {
-    top: 0;
+section .box a > button:before {
+    top: -0.125rem;
     left: 0;
-    width: 2px;
-    height: 100%;
-    transform-origin: top;
-    transform: scaleY(0);
 }
-
-section .box a > button::after {
-    top: 0;
+  
+section .box a > button:after {
+    bottom: 0;
     right: 0;
-    width: 100%;
-    height: 2px;
-    transform-origin: left;
-    transform: scaleX(0);
 }
 
-section .box a > button:hover::before {
-    transform: scaleY(1);
-}
+section .box a > button:hover:before {
+    width: inherit;
+    height: 100%;
+    opacity: 1;
+    border-top: 0.125rem solid white;
+    border-right: 0.125rem solid white;
+    transition: width 0.3s cubic-bezier(.07,.62,.61,1), height 0.3s/2 0.3s cubic-bezier(.07,.62,.61,1);
+}  
 
-section .box a > button:hover::after {
-    transform: scaleX(1);
+section .box a > button:hover:after {
+    width: inherit;
+    height: 100%;
+    opacity: 1;
+    border-bottom: 0.125rem solid white;
+    border-left: 0.125rem solid white;
+    transition: width 0.3s cubic-bezier(.07,.62,.61,1), height 0.3s/2 0.3s cubic-bezier(.07,.62,.61,1);
 }
 
 section .box a:nth-child(1) button {
