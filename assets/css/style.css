@@ -47,6 +47,7 @@ section .box a > button {
     border: none;
     padding: 10px 30px;
     transition: all 0.3s ease-in-out;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
 section .box a:nth-child(1) button {
