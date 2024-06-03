@@ -69,3 +69,12 @@ footer a {
     text-decoration: none;
     color: black;
 }
+
+footer a::after {
+    content: "";
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: black;
+    transition: 300ms;
+}
