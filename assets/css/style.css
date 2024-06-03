@@ -18,3 +18,9 @@ body {
 .hero img {
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
 }
+
+.move-down a {
+    margin-top: 25px;
+    transform: scale(3);
+    color: white;
+}
