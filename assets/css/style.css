@@ -19,6 +19,7 @@ body {
 
 .hero img {
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 25px;
 }
 
 .move-down a {
@@ -45,7 +46,7 @@ section .box a > button {
     transform: scale(3);
     border: none;
     padding: 10px 30px;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 section .box a > button:hover {
@@ -61,9 +62,10 @@ footer {
     height: 50px;
     width: 100%;
     background: #EE4266;
-    color: black !important;
+    color: black;
 }
 
 footer a {
     text-decoration: none;
+    color: black;
 }
