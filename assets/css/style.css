@@ -1,6 +1,7 @@
 body {
     scroll-behavior: smooth;
     background-color: #F1E5D1;
+    height: 150vh;
 }
 
 .hero {
@@ -28,6 +29,14 @@ body {
 
 section {
     position: relative;
-    top: 25vh;
+    top: 0;
+}
 
+section .box {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
