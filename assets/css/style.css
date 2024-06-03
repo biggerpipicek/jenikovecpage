@@ -51,10 +51,14 @@ section .box a > button {
 
 section .box a:nth-child(1) button {
     background-image: url("../imgs/miwose.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 section .box a:nth-child(2) button {
     background-image: url("../imgs/pssra.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 section .box a > button:hover {
