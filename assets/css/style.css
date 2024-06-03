@@ -49,6 +49,14 @@ section .box a > button {
     transition: all 0.3s ease-in-out;
 }
 
+section .box a:nth-child(1) button {
+    background-image: url("../imgs/miwose.jpg");
+}
+
+section .box a:nth-child(2) button {
+    background-image: url("../imgs/pssra.jpg");
+}
+
 section .box a > button:hover {
     transform: scale(3.25);
     letter-spacing: 0.2rem;
