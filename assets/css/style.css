@@ -43,62 +43,63 @@ section .box {
 }
 
 section .box a {
-    transform: scale(3);
-    border: none;
+    display: inline-block;
     padding: 10px 30px;
-    transition: all 0.3s ease-in-out;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-    color: white;
     text-decoration: none;
+    color: white;
+    background: transparent;
+    position: relative;
     z-index: 1;
-    position: relative;
-    -webkit-tap-highlight-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    transition: 0.3s;
+    transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
 }
 
 section .box a::before, section .box a::after {
-    position: absolute;
-    background: #eee;
-    z-index: -1;
-    transition: 1s;
     content: '';
+    position: absolute;
+    transition: 0.5s ease-in-out;
+    z-index: -1;
 }
 
 section .box a::before {
-    height: 50px;
-    width: 130px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid #eee;
 }
-  
+
 section .box a::after {
-    width: 150px;
-    height: 30px;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+    transform: translate(-50%, -50%);
 }
-  
+
+section .box a:hover::before {
+    border-color: #fff;
+}
+
+section .box a:hover::after {
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border-color: #eee;
+}
+
+section .box a:hover {
+    color: #000;
+    background: transparent;
+}
+
 .noselect {
     -webkit-touch-callout: none;
-      -webkit-user-select: none;
-       -khtml-user-select: none;
-         -moz-user-select: none;
-          -ms-user-select: none;
-              user-select: none;
-}
-  
-section .box a:hover::before {
-    width: 0px;
-    background: #fff;
-}
-  
-section .box a:hover::after {
-    height: 0px;
-    background: #fff;
-}
-  
-section .box a:hover {
-    background: #fff;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 section .box a:nth-child(1) {
