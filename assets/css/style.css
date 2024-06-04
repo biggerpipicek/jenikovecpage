@@ -50,6 +50,55 @@ section .box a {
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
     color: white;
     text-decoration: none;
+    z-index: 1;
+    position: relative;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s;
+}
+
+section .box a::before, section .box a::after {
+    position: absolute;
+    background: #eee;
+    z-index: -1;
+    transition: 1s;
+    content: '';
+}
+
+section .box a::before {
+    height: 50px;
+    width: 130px;
+}
+  
+section .box a::after {
+    width: 150px;
+    height: 30px;
+}
+  
+.noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+}
+  
+section .box a:hover::before {
+    width: 0px;
+    background: #fff;
+}
+  
+section .box a:hover::after {
+    height: 0px;
+    background: #fff;
+}
+  
+section .box a:hover {
+    background: #fff;
 }
 
 section .box a:nth-child(1) {
