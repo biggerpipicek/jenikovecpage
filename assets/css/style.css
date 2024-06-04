@@ -52,13 +52,13 @@ section .box a {
     text-decoration: none;
 }
 
-section .box:nth-child(1) {
+section .box a:nth-child(1) {
     background-image: url("../imgs/miwose.jpg");
     background-size: cover;
     background-position: center;
 }
 
-section .box:nth-child(2) {
+section .box a:nth-child(2) {
     background-image: url("../imgs/pssra.jpg");
     background-size: cover;
     background-position: center;
