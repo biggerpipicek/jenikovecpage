@@ -42,7 +42,7 @@ section .box {
     gap: 350px;
 }
 
-section .box a > button {
+section .box a {
     transform: scale(3);
     border: none;
     padding: 10px 30px;
@@ -50,19 +50,19 @@ section .box a > button {
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
-section .box a:nth-child(1) button {
+section .box a:nth-child(1) {
     background-image: url("../imgs/miwose.jpg");
     background-size: cover;
     background-position: center;
 }
 
-section .box a:nth-child(2) button {
+section .box a:nth-child() {
     background-image: url("../imgs/pssra.jpg");
     background-size: cover;
     background-position: center;
 }
 
-section .box a > button:hover {
+section .box a:hover {
     transform: scale(3.25);
     letter-spacing: 0.2rem;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
