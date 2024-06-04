@@ -61,6 +61,7 @@ section .box a {
     align-items: center;
     justify-content: center;
     transition: 0.3s;
+    box-shadow: 0 0px 5px 0 rgba(0,0,0,0.5);
 
     &::before,
     &::after {
