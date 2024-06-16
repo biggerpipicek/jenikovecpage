@@ -218,6 +218,10 @@ footer.waveFooter li > a::after {
     transition: 300ms;
 }
 
+footer.waveFooter li > a:hover::after {
+    width: 100%;
+}
+
 .wave {
     position: absolute;
     top: -100px;
