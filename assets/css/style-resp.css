@@ -1,14 +1,11 @@
 /* SMALLER DEVICES */
-
 @media screen and (max-width: 900px) {
     section .box {
         height: 75vh;
         flex-direction: column;
         gap: 150px;
     }
-}
 
-@media screen and (max-width: 500px) {
     section .box a {
         width: 100px;
         padding: 5px 15px;
