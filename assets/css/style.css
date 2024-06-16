@@ -49,6 +49,7 @@ section .box {
 section .box a {
     transform: scale(3);
     border: none;
+    width: 125px;
     padding: 10px 30px;
     transition: all 0.3s ease-in-out;
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
@@ -60,16 +61,16 @@ section .box a {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.3s;
+    transition: 0.5s;
     box-shadow: 0 0px 5px 0 rgba(0,0,0,0.5);
 
     &::before,
     &::after {
         content: "";
         position: absolute;
-        width: 20px;
-        height: 20px;
-        transition: .3s ease-in-out;
+        width: 25px;
+        height: 25px;
+        transition: 0.5s ease-in-out;
     }
     
     &::before {
