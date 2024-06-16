@@ -121,8 +121,8 @@ section .box a {
     
     &:hover::before,
     &:hover::after {
-        width: calc(100% + 12px);
-        height: calc(100% + 12px);
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
     }
 }
 
