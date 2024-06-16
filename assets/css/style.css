@@ -38,8 +38,8 @@ body {
     transition: 0.3s ease-in-out;
 }
 
-.move-down a:hover {
-    transform: scale(5);
+.move-down a > i:hover {
+    transform: scale(2);
 }
 
 section {
