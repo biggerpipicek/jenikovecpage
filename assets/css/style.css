@@ -209,7 +209,7 @@ footer.waveFooter {
     flex-wrap: wrap;
 }
 
-footer.waveFooter > .menu > ul {
+ul {
     padding-left: 0 !important;
 }
 
