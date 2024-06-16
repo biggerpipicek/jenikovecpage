@@ -26,10 +26,20 @@ body {
     margin-bottom: 25px;
 }
 
+.move-down {
+    position: relative;
+    top: 25px;
+}
+
 .move-down a {
     margin-top: 25px;
     transform: scale(3);
     color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.move-down a:hover, a:focus {
+    transform: scale(2);
 }
 
 section {
