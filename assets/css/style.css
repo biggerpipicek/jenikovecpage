@@ -181,11 +181,15 @@ footer a:hover::after {
     width: 100%;
 }
 
+footer.basic {
+    display: none;
+}
+
 /* WAVE FOOTER SECTION */
 
 footer.waveFooter {
     position: absolute;
-    background-color: #ce2247;
+    background-color: /*#ce2247*/ transparent;
     min-height: 50px;
     padding: 10px 25px;
     display: flex;
@@ -196,12 +200,22 @@ footer.waveFooter {
 }
 
 .menu {
+    list-style-type: none;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px 0;
     flex-wrap: wrap;
+}
+
+footer.waveFooter li > a::after {
+    content: "";
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: black;
+    transition: 300ms;
 }
 
 .wave {
