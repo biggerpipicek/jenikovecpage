@@ -189,7 +189,7 @@ footer.basic {
 
 footer.waveFooter {
     position: absolute;
-    background-color: /*#ce2247*/ transparent;
+    background-color: #bb1a1a;
     min-height: 50px;
     padding: 10px 25px;
     display: flex;
