@@ -209,7 +209,7 @@ footer.waveFooter {
     flex-wrap: wrap;
 }
 
-footer.waveFooter li > a::after {
+footer.waveFooter > .menu > ul > li > a::after {
     content: "";
     width: 0px;
     height: 1px;
@@ -218,7 +218,7 @@ footer.waveFooter li > a::after {
     transition: 300ms;
 }
 
-footer.waveFooter li > a:hover::after {
+footer.waveFooter > .menu > ul > li > a:hover::after {
     width: 100%;
 }
 
