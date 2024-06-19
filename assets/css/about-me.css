@@ -6,8 +6,9 @@
     border: 1px solid #6c757d;
     border-radius: 5px;
     text-align: left;
+    gap: 12.5px;
 }
 
 .text-section p {
-    padding: 7.5px 15px;
+    margin: 0;
 }
