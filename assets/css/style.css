@@ -84,7 +84,7 @@ section {
 }
 
 section .box {
-    height: 50vh;
+    height: 35vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -138,6 +138,10 @@ section .box a {
         width: calc(100% + 10px);
         height: calc(100% + 10px);
     }
+}
+
+section > .header {
+    margin-top: 15vh;
 }
 
 section .box a:nth-child(1) {
