@@ -140,7 +140,7 @@ section .box a {
     }
 }
 
-section > .header {
+section > .container-fluid > .header {
     margin-top: 15vh;
 }
 
