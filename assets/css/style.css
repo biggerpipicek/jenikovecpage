@@ -67,6 +67,7 @@ a.nav-link:hover {
 }
 
 .move-down a {
+    padding: 15px;
     margin-top: 25px;
     transform: scale(3);
     color: white;
