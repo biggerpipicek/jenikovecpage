@@ -17,18 +17,22 @@ body {
     width: 100%;
     top: 0;
     left: 0;
+    text-align: center;
 }
 
-a.navigation {
+a.nav-link {
+    display: inline-block;
     z-index: 1;
     color: white;
     font-size: 25px;
     margin-top: 25px;
     text-shadow: 0 0 5px rgba(0,0,0,0.5);
     transition: transform 0.5s ease-in-out;
+    padding: 5px 10px;
 }
 
-a.navigation:hover {
+a.nav-link:hover {
+    color: white;
     transform: scale(1.15);
 }
 
