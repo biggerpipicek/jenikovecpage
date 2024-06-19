@@ -10,6 +10,13 @@ body {
     height: 150vh;
 }
 
+/* NAV SECTION */
+ul.nav {
+    color: white;
+    font-weight: bold;
+    margin-bottom: -5vh;
+}
+
 /* HERO SECTION */
 
 .hero {
