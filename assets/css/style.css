@@ -13,6 +13,7 @@ body {
 /* NAV SECTION */
 
 .navigation {
+    z-index: 1;
     position: absolute;
     width: 100%;
     top: 0;
@@ -22,7 +23,6 @@ body {
 
 a.nav-link {
     display: inline-block;
-    z-index: 1;
     color: white;
     font-size: 25px;
     margin-top: 25px;
