@@ -32,6 +32,7 @@ body {
 .hero img {
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
     margin-bottom: 25px;
+    margin-top: -25px;
 }
 
 .move-down {
@@ -48,10 +49,25 @@ body {
 .move-down a > i {
     transform: scale(1);
     transition: 0.3s ease-in-out;
+    animation: down 1s infinite ease-in-out;
 }
 
 .move-down a > i:hover {
     transform: scale(2);
+}
+
+@keyframes down {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .gradient {
