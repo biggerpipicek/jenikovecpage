@@ -11,6 +11,7 @@ body {
 }
 
 /* NAV SECTION */
+
 .navigation {
     position: absolute;
     width: 100%;
@@ -20,8 +21,14 @@ body {
 
 a.navigation {
     color: white;
-    font-size: large;
-    font-weight: bold;
+    font-size: 25px;
+    margin-top: 25px;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    transition: hover 0.5s ease-in-out;
+}
+
+a.navigation:hover {
+    font-weight: 500;
 }
 
 /* HERO SECTION */
