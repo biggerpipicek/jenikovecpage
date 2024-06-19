@@ -10,4 +10,8 @@
         width: 100px;
         padding: 5px 15px;
     }
+
+    section > .container-fluid > .header {
+        margin-bottom: -10vh;
+    }
 }
