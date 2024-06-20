@@ -9,6 +9,12 @@ section.about-me  {
 
 /* TEXT SECTION */
 
+.text-section {
+    position: relative;
+    display: flex;
+    gap: 25px;
+}
+
 .text-section > .card {
     width: 90vh;
 }
