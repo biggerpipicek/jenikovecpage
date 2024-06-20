@@ -23,19 +23,20 @@ section.about-me  {
 
 .checkpoint {
     max-width: 34em;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    position: relative;
 }
 
 .checkpoint:nth-child(odd) {
     border-left: 3px solid rgba(0, 0, 0, 0.175);
-    padding-left: 3em;
+    margin-left: 3em;
     transform: translateX(17em);
 }
 
 .checkpoint:nth-child(even) {
     border-left: 3px solid rgba(0, 0, 0, 0.175);
-    padding-right: 3em;
+    margin-right: 3em;
     transform: translateX(-17em);
 }
 
