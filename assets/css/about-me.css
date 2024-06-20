@@ -23,20 +23,26 @@ section.about-me  {
 
 .checkpoint {
     max-width: 34em;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
     position: relative;
+}
+
+.checkpoint div {
+    border: 2px solid rgba(0, 0, 0, 0.175);
+    border-radius: 1em;
+    padding: 1.5em;
 }
 
 .checkpoint:nth-child(odd) {
     border-left: 3px solid rgba(0, 0, 0, 0.175);
-    margin-left: 3em;
+    padding-left: 3em;
     transform: translateX(17em);
 }
 
 .checkpoint:nth-child(even) {
     border-left: 3px solid rgba(0, 0, 0, 0.175);
-    margin-right: 3em;
+    padding-right: 3em;
     transform: translateX(-17em);
 }
 
@@ -51,19 +57,19 @@ section.about-me  {
 }
 
 .checkpoint:nth-child(odd)::before {
-    left: 0;
+    left: -3.5rem;
 }
 
 .checkpoint:nth-child(even)::before {
-    right: 0;
+    right: -3.5rem;
 }
 
 .checkpoint:nth-child(odd) div::before, .checkpoint:nth-child(even) div::before {
     content: "";
     background-color: #fff;
     box-shadow: 0 0 0.5em #959595;
-    width: 0.8em;
-    height: 0.8em;
+    width: 1em;
+    height: 1em;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
