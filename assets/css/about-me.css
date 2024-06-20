@@ -19,6 +19,7 @@ section.about-me  {
 }
 
 .text-section > .card {
+    max-width: 90vh;
     width: fit-content;
 }
 
