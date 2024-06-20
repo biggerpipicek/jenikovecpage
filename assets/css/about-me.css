@@ -44,9 +44,9 @@ section.about-me  {
 
 .checkpoint:nth-child(even) {
     border-right: 3px solid rgba(0, 0, 0, 0.175);
-    padding-right: 2em;
-    padding-left: 3em;
-    transform: translateX(-17em);
+    padding-right: 3em;
+    padding-left: 2em;
+    transform: translateX(-16.8em);
 }
 
 .checkpoint:nth-child(odd)::before, .checkpoint:nth-child(even)::before {
@@ -91,6 +91,10 @@ section.about-me  {
 
 .text-section, .vertical-section {
     z-index: 1;
+}
+
+.card-title {
+    line-height: 2;
 }
 
 /* FOOTER SECTION */
