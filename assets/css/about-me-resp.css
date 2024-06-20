@@ -1,0 +1,28 @@
+@media screen and (max-width: 900px) {
+    .vertical-section {
+        width: 80vw;
+    }
+
+    .vertical-section .checkpoint {
+        width: 100%;
+        transform: none;
+        padding-left: 0;
+        padding-right: 0;
+        border: none;
+    }
+
+    .vertical-section .checkpoint::before {
+        width: 3px;
+        height: 4em;
+        top: -2em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .vertical-section .checkpoint div::before {
+        top: -0.5em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
