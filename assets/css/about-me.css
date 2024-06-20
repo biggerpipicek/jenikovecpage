@@ -107,5 +107,6 @@ section.about-me  {
 /* FOOTER SECTION */
 
 footer.waveFooter {
-    bottom: -150vh;
+    position: relative;
+    bottom: -10vh;
 }
