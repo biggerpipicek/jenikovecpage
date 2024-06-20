@@ -28,6 +28,13 @@ section.about-me  {
     position: relative;
 }
 
+.checkpoint > .card-body {
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.175);
+    background-color: white;
+    padding: 20px 30px !important;
+}
+
 .checkpoint:nth-child(odd) {
     border-left: 3px solid rgba(0, 0, 0, 0.175);
     padding-left: 3em;
@@ -53,11 +60,11 @@ section.about-me  {
 }
 
 .checkpoint:nth-child(odd)::before {
-    left: -3.5rem;
+    left: 0;
 }
 
 .checkpoint:nth-child(even)::before {
-    right: -3.5rem;
+    right: 0;
 }
 
 .checkpoint:nth-child(odd) div::before, .checkpoint:nth-child(even) div::before {
