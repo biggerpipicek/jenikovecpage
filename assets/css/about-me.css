@@ -13,10 +13,6 @@ section.about-me  {
     width: 90vh;
 }
 
-footer.waveFooter {
-    bottom: -50vh;
-}
-
 /* VERTICAL SECTION */
 
 .vertical-section {
@@ -32,20 +28,20 @@ footer.waveFooter {
 }
 
 .checkpoint:nth-child(odd) {
-    border: 3px solid #999;
+    border-left: 3px solid rgba(0, 0, 0, 0.175);
     padding-left: 3em;
     transform: translateX(17em);
 }
 
 .checkpoint:nth-child(even) {
-    border: 3px solid #999;
+    border-left: 3px solid rgba(0, 0, 0, 0.175);
     padding-right: 3em;
     transform: translateX(-17em);
 }
 
 .checkpoint:nth-child(odd)::before, .checkpoint:nth-child(even)::before {
     content: "";
-    background-color: #999;
+    background-color: rgba(0, 0, 0, 0.175);
     width: 3rem;
     height: 3px;
     position: absolute;
@@ -85,4 +81,10 @@ footer.waveFooter {
 
 .text-section, .vertical-section {
     z-index: 1;
+}
+
+/* FOOTER SECTION */
+
+footer.waveFooter {
+    bottom: -150vh;
 }
