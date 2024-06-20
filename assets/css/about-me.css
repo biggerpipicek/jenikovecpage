@@ -10,3 +10,7 @@ section.about-me  {
 .card {
     width: 90vh;
 }
+
+footer.waveFooter {
+    bottom: -50vh;
+}
