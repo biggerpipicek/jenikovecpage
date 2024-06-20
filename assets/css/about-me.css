@@ -57,7 +57,7 @@ section.about-me  {
     right: 0;
 }
 
-.checkpoint:nth-child(odd) div::before, .checkpoint:nth-child(even) dif::before {
+.checkpoint:nth-child(odd) div::before, .checkpoint:nth-child(even) div::before {
     content: "";
     background-color: #fff;
     box-shadow: 0 0 0.5em #959595;
