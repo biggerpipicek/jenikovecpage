@@ -10,6 +10,8 @@ section.about-me  {
 /* TEXT SECTION */
 
 .text-section {
+    justify-content: center;
+    align-items: center;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -17,7 +19,7 @@ section.about-me  {
 }
 
 .text-section > .card {
-    width: 90vh;
+    width: fit-content;
 }
 
 /* VERTICAL SECTION */
