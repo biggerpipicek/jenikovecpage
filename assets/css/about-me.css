@@ -28,12 +28,6 @@ section.about-me  {
     position: relative;
 }
 
-.checkpoint div {
-    border: 2px solid rgba(0, 0, 0, 0.175);
-    border-radius: 1em;
-    padding: 1.5em;
-}
-
 .checkpoint:nth-child(odd) {
     border-left: 3px solid rgba(0, 0, 0, 0.175);
     padding-left: 3em;
