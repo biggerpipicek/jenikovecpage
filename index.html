@@ -23,16 +23,16 @@
             i++;
             setTimeout(typeWriter, speed);
         } else {
-            setTimeout(clearAndNext, speed * 10); // WAITING PERIOD
+            setTimeout(clearAndNext, speed * 10); // Wait before clearing the text
         }
-        }
+    }
 
-        function clearAndNext() {
+    function clearAndNext() {
         i = 0;
         document.getElementById("greet").innerHTML = "";
-        txtIndex = (txtIndex + 1) % txtList.length; // NEXT TEXT
+        txtIndex = (txtIndex + 1) % txtList.length; // Move to the next text, loop back to start
         setTimeout(typeWriter, speed);
-        }
+    }
 
         typeWriter();
     </script>
