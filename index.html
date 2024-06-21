@@ -13,14 +13,17 @@
 <body onload="typeWriter()">
     <script>
         var i = 0;
-        var txt = "Čau!";
+        var txt = ["Čau!", "Ahoj!", "Zdravím!", "Čégo!"];
         var speed = 150;
 
         function typeWriter() {
+        var txt = txtList[txtIndex];
         if (i < txt.length) {
             document.getElementById("greet").innerHTML += txt.charAt(i);
             i++;
             setTimeout(typeWriter, speed);
+        } else {
+            setTimeout(clearAndNext, speed * 10); // WAITING PERIOD
         }
         }
     </script>
