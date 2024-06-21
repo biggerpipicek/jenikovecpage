@@ -12,30 +12,32 @@
 </head>
 <body>
     <script>
-        var i = 0;
-        var txtIndex = 0;
-        var txtList = ["Čau!", "Ahoj!", "Zdravím!", "Čégo!"];
-        var speed = 150;
+        document.addEventListener("DOMContentLoaded", function() {
+            var i = 0;
+            var txtIndex = 0;
+            var txtList = ["Čau!", "Ahoj!", "Zdravím!", "Čégo!"];
+            var speed = 150;
 
-        function typeWriter() {
-        var txt = txtList[txtIndex];
-        if (i < txt.length) {
-            document.getElementById("greet").innerHTML += txt.charAt(i);
-            i++;
-            setTimeout(typeWriter, speed);
-        } else {
-            setTimeout(clearAndNext, speed * 10); // Wait before clearing the text
-        }
-    }
+            function typeWriter() {
+            var txt = txtList[txtIndex];
+            if (i < txt.length) {
+                document.getElementById("greet").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            } else {
+                setTimeout(clearAndNext, speed * 10); // Wait before clearing the text
+            }
+            }
 
-    function clearAndNext() {
-        i = 0;
-        document.getElementById("greet").innerHTML = "";
-        txtIndex = (txtIndex + 1) % txtList.length; // Move to the next text, loop back to start
-        setTimeout(typeWriter, speed);
-    }
+            function clearAndNext() {
+                i = 0;
+                document.getElementById("greet").innerHTML = "";
+                txtIndex = (txtIndex + 1) % txtList.length; // Move to the next text, loop back to start
+                setTimeout(typeWriter, speed);
+            }
 
-        typeWriter();
+            typeWriter();
+        });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
