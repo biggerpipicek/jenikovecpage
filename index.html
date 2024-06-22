@@ -26,11 +26,11 @@
             if (!deleting && i < txt.length) {
                 greetElement.innerHTML += txt.charAt(i);
                 i++;
-                setTimeout(typeWriter, speed);
+                setTimeout(typeWriter, speed); // TYPING SPEED
             } else if (deleting && i > 0) {
                 greetElement.innerHTML = txt.substring(0, i - 1);
                 i--;
-                setTimeout(typeWriter, speed / 15); // DELETION SPEED
+                setTimeout(typeWriter, speed) // DELETION SPEED
             } else {
                 deleting = !deleting;
                 if (!deleting) {
