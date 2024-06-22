@@ -62,6 +62,7 @@ a.nav-link:hover {
     font-family: "Playwrite NZ", cursive;
     font-optical-sizing: auto;
     font-style: normal;
+    height: 48px !important;
 }
 
 .hero img {
