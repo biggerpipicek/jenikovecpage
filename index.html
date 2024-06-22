@@ -30,14 +30,14 @@
             } else if (deleting && i > 0) {
                 greetElement.innerHTML = txt.substring(0, i - 1);
                 i--;
-                setTimeout(typeWriter, speed / 2); // Speed up deletion
+                setTimeout(typeWriter, speed / 2); // DELETION SPEED
             } else {
                 deleting = !deleting;
                 if (!deleting) {
-                    txtIndex = (txtIndex + 1) % txtList.length; // Move to the next text, loop back to start
+                    txtIndex = (txtIndex + 1) % txtList.length; // MOVE TO THE NEXT TEXT
                     setTimeout(typeWriter, speed);
                 } else {
-                    setTimeout(typeWriter, speed * 5); // Pause before starting to delete
+                    setTimeout(typeWriter, speed * 15); // PAUSE BEFORE DELETE
                 }
             }
         }
