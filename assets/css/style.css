@@ -1,4 +1,7 @@
+
+/* IMPORTED FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap');
 
 :root {
     --borderColor: #E7D4B5;
@@ -53,6 +56,12 @@ a.nav-link:hover {
 
 .hero-text {
     z-index: 1;
+}
+
+.hero > .hero-text > #greet {
+    font-family: "Playwrite NZ", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .hero img {
