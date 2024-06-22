@@ -30,7 +30,7 @@
             } else if (deleting && i > 0) {
                 greetElement.innerHTML = txt.substring(0, i - 1);
                 i--;
-                setTimeout(typeWriter, speed / 2); // DELETION SPEED
+                setTimeout(typeWriter, speed / 15); // DELETION SPEED
             } else {
                 deleting = !deleting;
                 if (!deleting) {
