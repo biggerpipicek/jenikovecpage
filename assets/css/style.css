@@ -131,10 +131,8 @@ section {
 }
 
 section .box {
-    height: 35vh;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; /* Add this */
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 350px;
@@ -213,14 +211,16 @@ section .box a:hover {
 }
 
 section .box a:nth-child(3) {
-    flex-basis: 100%;     /* Makes it take the full width row */
-    justify-content: center;
-    display: flex;
-    /*margin-top: 30px; 8/     /* Optional spacing from above buttons */
-    background-image: url("../imgs/3d_print.jpg"); /* Optional background */
+    background-image: url("../imgs/pssra.jpg");
     background-size: cover;
     background-position: center;
-    flex-direction: row;
+}
+
+section .box .break {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
 
 /* FOOTER SECTION */
