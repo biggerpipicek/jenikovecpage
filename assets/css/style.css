@@ -156,6 +156,7 @@ section .box a {
     justify-content: center;
     transition: 0.5s;
     box-shadow: 0 0px 5px 0 rgba(0,0,0,0.5);
+    outline: 2px solid black;
 
     &::before,
     &::after {
