@@ -216,10 +216,11 @@ section .box a:nth-child(3) {
     flex-basis: 100%;     /* Makes it take the full width row */
     justify-content: center;
     display: flex;
-    margin-top: 30px;     /* Optional spacing from above buttons */
+    /*margin-top: 30px; 8/     /* Optional spacing from above buttons */
     background-image: url("../imgs/3d_print.jpg"); /* Optional background */
     background-size: cover;
     background-position: center;
+    flex-direction: row;
 }
 
 /* FOOTER SECTION */
