@@ -215,7 +215,7 @@ section .box a:hover {
 }
 
 section .box .break a:nth-child(1) {
-    background-image: url("../imgs/pssra.jpg");
+    background-image: url("../imgs/3d_print.jpg");
     background-size: cover;
     background-position: center;
     margin-right: 0;
