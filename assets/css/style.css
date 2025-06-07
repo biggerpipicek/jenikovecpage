@@ -195,12 +195,14 @@ section .box a:nth-child(1) {
     background-image: url("../imgs/miwose.jpg");
     background-size: cover;
     background-position: center;
+    margin-right: 50px;
 }
 
 section .box a:nth-child(2) {
     background-image: url("../imgs/pssra.jpg");
     background-size: cover;
     background-position: center;
+    margin-left: 50px;
 }
 
 section .box a:hover {
@@ -220,7 +222,8 @@ section .box .break {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    /* margin-top: 30px; */
+
 }
 
 /* FOOTER SECTION */
