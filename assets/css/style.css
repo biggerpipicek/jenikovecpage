@@ -134,6 +134,7 @@ section .box {
     height: 35vh;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap; /* Add this */
     justify-content: center;
     align-items: center;
     gap: 350px;
