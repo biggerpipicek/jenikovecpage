@@ -216,7 +216,7 @@ section .box a:nth-child(3) {
     background-position: center;
 }
 
-section .box > .break {
+section .box .break {
     width: 100%;
     display: flex;
     justify-content: center;
