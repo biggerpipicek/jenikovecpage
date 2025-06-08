@@ -11,9 +11,8 @@
     flex-direction: column;
 }
 
-.text-section {
-    position: relative;
-    top: 10vh;
+.text-section h1, p {
+    scale: 2;
 }
 
 .table-section {
