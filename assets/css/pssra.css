@@ -11,7 +11,7 @@
     flex-direction: column;
 }
 
-.text-section h1, p {
+.text-section > h1, p {
     color: white;
     scale: 2;
 }
