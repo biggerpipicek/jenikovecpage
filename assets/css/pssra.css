@@ -9,11 +9,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.text-section > h1, p {
+    font-size: larger;
+    font-weight: bold;
     color: white;
-    scale: 2;
 }
 
 .table-section {
