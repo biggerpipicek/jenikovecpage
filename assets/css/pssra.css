@@ -9,9 +9,16 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: larger;
-    font-weight: bold;
     color: white;
+}
+
+.hero h1 {
+    font-size: 45px;
+}
+
+.hero p {
+    font-size: 16px;
+    font-style: italic;
 }
 
 .table-section {
