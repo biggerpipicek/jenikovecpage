@@ -16,6 +16,10 @@
     font-size: 75px;
 }
 
+.text-section {
+    z-index: 1;
+}
+
 .hero .text-section p {
     font-size: 25px;
     font-style: italic;
