@@ -14,13 +14,11 @@
 
 .hero .text-section h1 {
     font-size: 75px;
-    text-shadow: 0px 0px 5px rgba(0,0,0,0.75);
 }
 
 .hero .text-section p {
     font-size: 25px;
     font-style: italic;
-    text-shadow: 0px 0px 5px rgba(0,0,0,0.75);
 }
 
 .table-section {
