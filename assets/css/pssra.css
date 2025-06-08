@@ -12,6 +12,7 @@
 }
 
 .text-section h1, p {
+    color: white;
     scale: 2;
 }
 
